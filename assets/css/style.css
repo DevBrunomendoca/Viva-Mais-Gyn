@@ -109,7 +109,7 @@ body {
   cursor: pointer;
   border: none;
   background-color: #fff;
-  color: #1d1d1d;
+  color: #356FC0;
   font-size: 1.5rem;
   font-weight: 500;
   transition: .5s;
@@ -205,6 +205,7 @@ body {
   margin-top: 30px;
   transition: .5s;
   cursor: pointer;
+  color: #1d1d1d;
 }
 #btn-know:hover {
   background-color: #356FC0;
@@ -245,14 +246,14 @@ body {
 }
 
 .contacts a {
-  background-color: #fff;
   color: #fff;
   text-decoration: none;
-  padding: 1rem;
-  border-radius: 50%;
 }
 .contacts a img {
   width: 40px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .footer {
