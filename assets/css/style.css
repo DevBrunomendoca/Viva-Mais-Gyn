@@ -34,14 +34,16 @@ body {
 }
 .container-header>div {
   display: flex;
-  width:100% ;
+  
 } 
 #logo-main {
   width: 250px;
+  z-index: 1001;
 }
 #logo-second {
   width: 100px;
   padding: 2.2rem ;
+  z-index: 1001;
 }
 .navigation ul {
   display: flex;
@@ -56,6 +58,16 @@ body {
   font-weight: 500;
   font-size: 2rem;
 } 
+.menu-hamburguer {
+  display: none;
+}
+
+
+
+
+
+
+
 .distribution {
   
   background-color: #356FC0;
@@ -103,7 +115,7 @@ body {
   text-shadow: 5px 5px 5px #1d1d1d;
 }
 
-.btn {
+ .btn {
   padding: 1rem 4rem;
   border-radius: 5px;
   cursor: pointer;
@@ -156,7 +168,7 @@ body {
   margin: 0 auto;
   max-width: 1500px;
 }
-.products.three{
+.products.third{
   margin: 0 auto;
   padding-top: 10rem;
   max-width: 1500px;
@@ -257,6 +269,23 @@ body {
 }
 
 .footer {
-  height: 100px;
   background-color: #F2F3F4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+
+}
+.footer p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+  max-width: 700px;
+  color: #1d1d1d;
+}
+.footer p:not(:last-child) {
+  opacity: .8;
+  line-height: 120%;
 }

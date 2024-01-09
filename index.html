@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <script src="assets/js/menu.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -25,25 +26,34 @@
           />
           <img id="logo-second" src="./assets/images/logo_Royal.png" alt="" />
         </div>
+
+        <div class="menu-section">
+        <nav class="menu-hamburguer">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </nav>
         <nav class="navigation">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#products">Produtos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
+      </div>
       </div>
     </header>
     <div class="distribution">
       <h3>DISTRIBUIÇÃO AUTORIZADA ROYAL PRESTIGE</h3>
     </div>
     <main class="main">
-      <section class="container-main">
+      <section id="home" class="container-main">
         <h1>A MELHOR TECNOLOGIA NO PREPARO DOS ALIMENTOS PARA SUA FAMÍLIA</h1>
-        <button class="btn">Contate-Nos</button>
+        <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+os+produtos+da+Royal+Prestige" target="_blank"><button class="btn">Contate-Nos</button></a>
+        
       </section>
-      <section class="conteiner-about">
+      <section id="about" class="conteiner-about">
         <div class="content-about">
           <h2>
             Nosso objetivo é propocionar à sua família uma melhor qualidade de
@@ -63,7 +73,7 @@
         </div>
       </section>
 
-      <section class="products one">
+      <section id="products" class="products one">
         <div class="slide">
           <div class="content-slider">
             <h2>PANELAS</h2>
@@ -75,7 +85,8 @@
               sais minerais, importantes para sua saúde. Possuem, ainda, uma
               garantia limitada de 50 anos.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+panela" target="_blank"><button id="btn-know">Saiba Mais</button></a>
+            
           </div>
           <div class="img-slider">
             <img
@@ -107,12 +118,12 @@
               do tempo em comparação com as panelas de pressão comum. Possuem,
               ainda, uma garantia limitada de 50 anos.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+panela+de+press%C3%A3o" target="_blank"><button id="btn-know">Saiba Mais</button></a>
           </div>
         </div>
       </section>
 
-      <section class="products three">
+      <section class="products third">
         <div class="slide">
           <div class="img-slider">
             <img
@@ -133,7 +144,7 @@
               apenas trinta segundos. Possui, ainda, 7 anos de garantia limitada
               no motor.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+Power+Blender" target="_blank"><button id="btn-know">Saiba Mais</button></a>
           </div>
         </div>
       </section>
@@ -149,7 +160,7 @@
               quantidade de nutrientes das frutas, legumes e folhas. Além de ser
               silencioso, o seu motor possui uma garantia limitada de 10 anos.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+Maxtractor" target="_blank"><button id="btn-know">Saiba Mais</button></a>
           </div>
           <img
             src="./assets/images/producto-maxtrator.jpeg"
@@ -169,7 +180,7 @@
               manivela evitam deslizamentos e te oferecem firmeza ao cortar seus
               ingredientes. Possuem, ainda, uma garantia limitada de 50 anos.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+Royal+Cutter" target="_blank"><button id="btn-know">Saiba Mais</button></a>
           </div>
           <div class="img-slider">
             <img
@@ -192,7 +203,7 @@
               limitada de 50 anos. Para mais produtos, consulte nosso
               maravilhoso catálogo.
             </p>
-            <button id="btn-know">Saiba Mais</button>
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+o+produto+Facas" target="_blank"><button id="btn-know">Saiba Mais</button></a>
           </div>
           <div class="img-slider">
             <img src="./assets/images/producto-faca.jpeg" alt="" width="100%" />
@@ -203,8 +214,8 @@
       <section class="contact">
         <h2>Entrar em contato</h2>
         <div>
-          <div class="contacts">
-            <a href="#"><img src="./assets/images/icone-wpp.png" alt="" /></a>
+          <div id="contact" class="contacts">
+            <a href="https://wa.me/5562982392838?text=Ol%C3%A1%2C+gostaria+de+receber+mais+informa%C3%A7%C3%B5es+sobre+os+produtos+da+Royal+Prestige" target="_blank"><img src="./assets/images/icone-wpp.png"  alt="" /></a>
             <p>(62) 98239-2838 - Moyses Junior</p>
           </div>
           <div class="contacts">
@@ -214,6 +225,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p>JOÃO BATISTA CORREIA, pessoa jurídica de direito privado, inscrita no CNPJ sob no 26.187.472/0001-99, com endereço na Rua 18, 282 - Sala 7 - Galeria Marfim, Setor Oeste Goiânia - GO Cep: 74130-080,  doravante denominada simplesmente CONTRATANTE.</p>
+      <p>© Copyright | Developed By Dlack Technology</p>
+    </footer>
   </body>
 </html>

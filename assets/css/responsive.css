@@ -36,10 +36,79 @@
   .navigation {
     display: none;
   }
+  .menu-hamburguer {
+    display: block;
+    width: 40px;
+    height: 30px;
+    z-index: 1000;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #1d1d1d;
+    height: 4px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: .3s;
+  }
+  .menu-section.on {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 400px;
+  }
+  
+  .menu-section.on .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .menu-section.on .menu-hamburguer {
+    position: absolute;
+    right: 20px;
+    top: 8%;
+  }
+  .menu-section.on .menu-hamburguer .one {
+    transform: rotate(45deg) translate(6px, 7px);
+  }
+  .menu-section.on .menu-hamburguer .two {
+    opacity: 0;
+  }
+  .menu-section.on .menu-hamburguer .three {
+  transform: rotate(-45deg) translate(7px, -10px);
+  }
+  .menu-section.on .navigation ul {
+    flex-direction: column;
+    margin: 5rem 0 0 44vw;
+  }
+  .menu-section.on .navigation ul li{
+    text-align: center;
+  }
+  .menu-section.on .navigation ul a{
+    font-size: 2rem;
+  }
   .container-main{
     padding-top: 300px;
   }
   .container-main h1 {
     font-size: 3rem;
+  }
+  .footer p:not(:last-child) {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 420px ) {
+
+  .menu-section.on .navigation ul {
+    margin: 5rem 0 0 39vw;
+  }
+  #logo-main {
+    width: 180px;
+  }
+  #logo-second {
+    width: 80px;
+    margin-left: -30px;
   }
 }
