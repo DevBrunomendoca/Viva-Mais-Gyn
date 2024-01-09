@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff ;  
+  z-index: 999;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+.container-header {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.container-header>div {
+  display: flex;
+  width:100% ;
+} 
+#logo-main {
+  width: 250px;
+}
+#logo-second {
+  width: 100px;
+  padding: 2.2rem ;
+}
+.navigation ul {
+  display: flex;
+  gap: 2.5rem;
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  text-decoration: none;
+  color: #356FC0 ;
+  font-weight: 500;
+  font-size: 2rem;
+} 
+.distribution {
+  
+  background-color: #356FC0;
+  padding-top: 160px;
+}
+.distribution h3 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+.main {
+  min-height: 90vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+
+}
+.container-main {
+  background-image: url('/assets/images/banner-main-2.jpg');
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 400px;
+  min-height: 100vh;
+}
+
+
+.container-main h1 {
+  color: #fff;
+
+  font-size: 5rem;
+  font-weight: 600;
+  max-width: 900px;
+  text-align: center;
+  line-height: 120%;
+  text-shadow: 5px 5px 5px #1d1d1d;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #356FC0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: .5s;
+}
+.btn:hover {
+  background-color: #356FC0;
+  color: #fff;
+}
+.conteiner-about {
+  background-color: #F2F3F4;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin: 10rem 0 ;
+  padding: 10rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.content-img {
+  width: 100%;
+}
+.content-img img {
+  width: 100%;
+}
+.content-about {
+  width: 100%;
+  max-width: 600px;
+}
+.content-about h2, .content-slider h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #3b3b3b;
+  line-height: 120%;
+}
+.content-about p , .content-slider p{
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin-top: 4rem;
+}
+
+.products {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.products.three{
+  margin: 0 auto;
+  padding-top: 10rem;
+  max-width: 1500px;
+}
+.products.four{
+  margin: 0 auto;
+  padding-top: 10rem;
+  max-width: 1500px;
+  display: flex;
+}
+.products.four .container {
+  background-color: #F2F3F4;
+}
+.products.four .container .img-slider {
+  width: 100%;
+}
+.products.four .container .content-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.products.four .container .img-slider img{
+  padding: 2rem;
+}
+.products.four .container .content-slider p {
+  text-align: center;
+}
+.products.five {
+  padding-top: 10rem;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  background-color: #F2F3F4;
+}
+.content-slider {
+  width: 40%;
+  padding: 3rem;
+}
+#btn-know {
+  padding: 1rem 3rem;
+  background-color: #EEB6AA;
+  border: none;
+  margin-top: 30px;
+  transition: .5s;
+  cursor: pointer;
+}
+#btn-know:hover {
+  background-color: #356FC0;
+  color: #fff;
+}
+
+.img-slider {
+  width: 60%;
+}
+
+.contact {
+  background-color: #356FC0;
+  width: 100%;
+  margin-top: 10rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.contact h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.contacts p {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.contacts a {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+}
+.contacts a img {
+  width: 40px;
+}
+
+.footer {
+  height: 100px;
+  background-color: #F2F3F4;
+}
