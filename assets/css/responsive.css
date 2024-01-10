@@ -1,4 +1,4 @@
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { 
   .conteiner-about {
     flex-direction: column;
     padding: 2rem;
@@ -20,6 +20,14 @@
     width: 100%;
     padding: 0 2rem;
   }
+  .products.first .slide .img-slider {
+    flex-direction: column;
+    width: 100%;
+  }
+  .products.first .slide .content-slider {
+    text-align: start;
+    max-width: none;
+  }
   .products.four {
     flex-direction: column;
   }
@@ -33,6 +41,9 @@
   }
 }
 @media (max-width: 800px ){
+  html {
+    font-size: 55%;
+  }
   .navigation {
     display: none;
   }
@@ -92,7 +103,7 @@
     padding-top: 300px;
   }
   .container-main h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
   }
   .footer p:not(:last-child) {
     font-size: 1.2rem;
